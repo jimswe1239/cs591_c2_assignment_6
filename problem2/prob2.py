@@ -1,10 +1,9 @@
 import math
 
-def p2():
+def p2(choice, length, breadth):
     """
     Assume user will put in correct character wanted everytime
     """
-    choice = input("Choose a shape: (C)ircle or (R)ectangle or (S)quare")
     shape = None
     if choice == "C":
         shape = "Circle"
@@ -12,9 +11,6 @@ def p2():
         shape = "Rectangle"
     elif choice == "S":
         shape = "Square"
-
-    length = int(input(shape + " length? "))
-    breadth = int(input(shape + " breadth? "))
 
     area = None
     perimeter = None
